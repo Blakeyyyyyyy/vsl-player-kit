@@ -1,0 +1,175 @@
+{
+  "checks": [
+    {
+      "duration": 450,
+      "time": 0,
+      "label": "start",
+      "expected_percent": 0,
+      "actual_percent": 0,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": 10,
+      "label": "10 seconds",
+      "expected_percent": 33.58024691358025,
+      "actual_percent": 33.58024691358024,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": 45,
+      "label": "transition",
+      "expected_percent": 85,
+      "actual_percent": 85,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": 46,
+      "label": "one second after transition",
+      "expected_percent": 85.03703703703704,
+      "actual_percent": 85.03703703703704,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": 247.5,
+      "label": "midpoint of remaining 405 seconds",
+      "expected_percent": 92.5,
+      "actual_percent": 92.5,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": 450,
+      "label": "end",
+      "expected_percent": 100,
+      "actual_percent": 100,
+      "pass": true
+    },
+    {
+      "duration": 30,
+      "time": 0,
+      "label": "start",
+      "expected_percent": 0,
+      "actual_percent": 0,
+      "pass": true
+    },
+    {
+      "duration": 30,
+      "time": 10,
+      "label": "10 seconds",
+      "expected_percent": 33.33333333333333,
+      "actual_percent": 33.33333333333333,
+      "pass": true
+    },
+    {
+      "duration": 30,
+      "time": 45,
+      "label": "45 seconds, clamped beyond end",
+      "expected_percent": 100,
+      "actual_percent": 100,
+      "pass": true
+    },
+    {
+      "duration": 30,
+      "time": 46,
+      "label": "46 seconds, clamped beyond end",
+      "expected_percent": 100,
+      "actual_percent": 100,
+      "pass": true
+    },
+    {
+      "duration": 30,
+      "time": 15,
+      "label": "whole-video midpoint; no remainder exists",
+      "expected_percent": 50,
+      "actual_percent": 50,
+      "pass": true
+    },
+    {
+      "duration": 30,
+      "time": 30,
+      "label": "end",
+      "expected_percent": 100,
+      "actual_percent": 100,
+      "pass": true
+    },
+    {
+      "duration": 45,
+      "time": 10,
+      "label": "45-second boundary remains linear",
+      "expected_percent": 22.22222222222222,
+      "actual_percent": 22.22222222222222,
+      "pass": true
+    },
+    {
+      "duration": 45,
+      "time": 45,
+      "label": "45-second end",
+      "expected_percent": 100,
+      "actual_percent": 100,
+      "pass": true
+    },
+    {
+      "duration": 46,
+      "time": 45,
+      "label": "46-second clip transition",
+      "expected_percent": 85,
+      "actual_percent": 85,
+      "pass": true
+    },
+    {
+      "duration": 46,
+      "time": 45.5,
+      "label": "46-second clip remainder midpoint",
+      "expected_percent": 92.5,
+      "actual_percent": 92.5,
+      "pass": true
+    },
+    {
+      "duration": 46,
+      "time": 46,
+      "label": "46-second end",
+      "expected_percent": 100,
+      "actual_percent": 100,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": -1,
+      "label": "negative time clamped",
+      "expected_percent": 0,
+      "actual_percent": 0,
+      "pass": true
+    },
+    {
+      "duration": 0,
+      "time": 10,
+      "label": "duration not ready",
+      "expected_percent": 0,
+      "actual_percent": 0,
+      "pass": true
+    },
+    {
+      "duration": null,
+      "time": 10,
+      "label": "metadata not ready",
+      "expected_percent": 0,
+      "actual_percent": 0,
+      "pass": true
+    },
+    {
+      "duration": 450,
+      "time": null,
+      "label": "invalid time",
+      "expected_percent": 0,
+      "actual_percent": 0,
+      "pass": true
+    }
+  ],
+  "monotonic_bounded": true,
+  "linear_tail": true,
+  "real_vsl_duration_checked": 449.747007
+}

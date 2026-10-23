@@ -1,0 +1,187 @@
+{
+  "desktop": {
+    "url": "http://127.0.0.1:8118/demo.html",
+    "title": "VSL kit tracking demo",
+    "readyState": "complete",
+    "device": "desktop Chrome 1280\u00d7800",
+    "horizontalOverflow": false,
+    "steps": [
+      {
+        "step": {
+          "wait": 1200
+        }
+      },
+      {
+        "step": {
+          "eval": "window.d=document.getElementById('vsl-frame').contentDocument;window.v=d.getElementById('video');JSON.stringify({autoplay:!v.paused,muted:v.muted,time:v.currentTime,overlay:!d.getElementById('message').hidden})"
+        },
+        "result": "{\"autoplay\":true,\"muted\":true,\"time\":1.521097,\"overlay\":true}"
+      },
+      {
+        "step": {
+          "eval": "d.getElementById('surface').click();JSON.stringify({time:v.currentTime,muted:v.muted})"
+        },
+        "result": "{\"time\":0,\"muted\":false}"
+      },
+      {
+        "step": {
+          "wait": 500
+        }
+      },
+      {
+        "step": {
+          "eval": "d.getElementById('play').click();JSON.stringify({paused:v.paused})"
+        },
+        "result": "{\"paused\":true}"
+      },
+      {
+        "step": {
+          "eval": "d.getElementById('play').click();v.playbackRate=16;'resumed actual playback at test-only 16x'"
+        },
+        "result": "resumed actual playback at test-only 16x"
+      },
+      {
+        "step": {
+          "wait": 6000
+        }
+      },
+      {
+        "step": {
+          "click": "#cta"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "click": "#cta"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "click": "#submit"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "click": "#submit"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "eval": "JSON.stringify({ended:v.ended,time:v.currentTime,duration:v.duration,bar:d.getElementById('progress').style.width,supabase:SUPABASE_CALLS.map(x=>x.event),pixel:PIXEL_CALLS.map(x=>({command:x[0],event:x[1]})),uniqueSupabase:new Set(SUPABASE_CALLS.map(x=>x.event)).size,uniquePixel:new Set(PIXEL_CALLS.map(x=>x[1])).size})"
+        },
+        "result": "{\"ended\":true,\"time\":60,\"duration\":60,\"bar\":\"100%\",\"supabase\":[\"page_view\",\"autoplay_start\",\"unmute_click\",\"watched_25\",\"watched_50\",\"watched_75\",\"watched_100\",\"cta_click\",\"form_submit\"],\"pixel\":[{\"command\":\"trackCustom\",\"event\":\"VSL_Start\"},{\"command\":\"trackCustom\",\"event\":\"VSL_Unmute\"},{\"command\":\"trackCustom\",\"event\":\"VSL_25\"},{\"command\":\"trackCustom\",\"event\":\"VSL_50\"},{\"command\":\"trackCustom\",\"event\":\"VSL_75\"},{\"command\":\"trackCustom\",\"event\":\"VSL_100\"},{\"command\":\"trackCustom\",\"event\":\"VSL_CTA\"},{\"command\":\"track\",\"event\":\"Lead\"}],\"uniqueSupabase\":9,\"uniquePixel\":8}"
+      }
+    ],
+    "consoleErrors": [],
+    "failedRequests": [],
+    "screenshot": "/Users/blakestephens/co-founder/jarvis/brain/hub/agents/builder/browser-shots/J-118-1792716304996.png"
+  },
+  "iphone": {
+    "url": "http://127.0.0.1:8118/demo.html",
+    "title": "VSL kit tracking demo",
+    "readyState": "complete",
+    "device": "iPhone-sized Chrome (390\u00d7844, iOS user agent; not real Safari)",
+    "horizontalOverflow": false,
+    "steps": [
+      {
+        "step": {
+          "wait": 1200
+        }
+      },
+      {
+        "step": {
+          "eval": "window.d=document.getElementById('vsl-frame').contentDocument;window.v=d.getElementById('video');JSON.stringify({autoplay:!v.paused,muted:v.muted,time:v.currentTime,overlay:!d.getElementById('message').hidden})"
+        },
+        "result": "{\"autoplay\":true,\"muted\":true,\"time\":1.473086,\"overlay\":true}"
+      },
+      {
+        "step": {
+          "eval": "d.getElementById('surface').click();JSON.stringify({time:v.currentTime,muted:v.muted})"
+        },
+        "result": "{\"time\":0,\"muted\":false}"
+      },
+      {
+        "step": {
+          "wait": 500
+        }
+      },
+      {
+        "step": {
+          "eval": "d.getElementById('play').click();JSON.stringify({paused:v.paused})"
+        },
+        "result": "{\"paused\":true}"
+      },
+      {
+        "step": {
+          "eval": "d.getElementById('play').click();v.playbackRate=16;'resumed actual playback at test-only 16x'"
+        },
+        "result": "resumed actual playback at test-only 16x"
+      },
+      {
+        "step": {
+          "wait": 6000
+        }
+      },
+      {
+        "step": {
+          "click": "#cta"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "click": "#cta"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "click": "#submit"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "click": "#submit"
+        },
+        "result": "clicked"
+      },
+      {
+        "step": {
+          "eval": "JSON.stringify({ended:v.ended,time:v.currentTime,duration:v.duration,bar:d.getElementById('progress').style.width,supabase:SUPABASE_CALLS.map(x=>x.event),pixel:PIXEL_CALLS.map(x=>({command:x[0],event:x[1]})),uniqueSupabase:new Set(SUPABASE_CALLS.map(x=>x.event)).size,uniquePixel:new Set(PIXEL_CALLS.map(x=>x[1])).size})"
+        },
+        "result": "{\"ended\":true,\"time\":60,\"duration\":60,\"bar\":\"100%\",\"supabase\":[\"page_view\",\"autoplay_start\",\"unmute_click\",\"watched_25\",\"watched_50\",\"watched_75\",\"watched_100\",\"cta_click\",\"form_submit\"],\"pixel\":[{\"command\":\"trackCustom\",\"event\":\"VSL_Start\"},{\"command\":\"trackCustom\",\"event\":\"VSL_Unmute\"},{\"command\":\"trackCustom\",\"event\":\"VSL_25\"},{\"command\":\"trackCustom\",\"event\":\"VSL_50\"},{\"command\":\"trackCustom\",\"event\":\"VSL_75\"},{\"command\":\"trackCustom\",\"event\":\"VSL_100\"},{\"command\":\"trackCustom\",\"event\":\"VSL_CTA\"},{\"command\":\"track\",\"event\":\"Lead\"}],\"uniqueSupabase\":9,\"uniquePixel\":8}"
+      }
+    ],
+    "consoleErrors": [],
+    "failedRequests": [],
+    "screenshot": "/Users/blakestephens/co-founder/jarvis/brain/hub/agents/builder/browser-shots/J-118-1792716319033.png"
+  },
+  "ownership": {
+    "url": "http://127.0.0.1:8118/demo.html",
+    "title": "VSL kit tracking demo",
+    "readyState": "complete",
+    "device": "iPhone-sized Chrome (390\u00d7844, iOS user agent; not real Safari)",
+    "horizontalOverflow": false,
+    "steps": [
+      {
+        "step": {
+          "wait": 500
+        }
+      },
+      {
+        "step": {
+          "eval": "VSL_CONFIG.pageOwnsLead=true;fbq('track','Lead');document.getElementById('submit').click();document.getElementById('submit').click();JSON.stringify({leadCount:PIXEL_CALLS.filter(x=>x[1]==='Lead').length,formCount:SUPABASE_CALLS.filter(x=>x.event==='form_submit').length})"
+        },
+        "result": "{\"leadCount\":1,\"formCount\":1}"
+      }
+    ],
+    "consoleErrors": [],
+    "failedRequests": [],
+    "screenshot": "/Users/blakestephens/co-founder/jarvis/brain/hub/agents/builder/browser-shots/J-118-1792716409881.png"
+  }
+}
